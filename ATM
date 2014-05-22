@@ -1,0 +1,18 @@
+class atm(object):
+    def __init__(self, cash, status):
+
+    def atm_start(self):
+        c1 = card('Ilya', 123456, 1234, 150000)
+        c2 = card("Nastya", 234567, 2345, 250000)
+        c3 = card("Jon", 456789, 3456, 5000)
+        c4 = card("Bobik", 567891, 5234, 250)
+        c5 = card("Olga", 234567, 2645, 25)
+
+
+
+
+
+class card(object):
+    def __init__(self, name, card_number, pin, balance):
+        self.name = name
+        self.card_

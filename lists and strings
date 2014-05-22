@@ -1,0 +1,100 @@
+"""# check if an element is in the list
+def check_el(s, b):
+    for i in s:
+        if i == b:
+            print("Element is in the list " + str(b))
+            return True
+check_el([1,2,3,4,5], 4)
+
+# returns el-ts on odds positions
+def odd_position(k):
+    a = []
+    for i, b in enumerate(k):
+        if i % 2 != 0:
+            a.append(b)
+    return a
+
+    #return k[::2]
+print(odd_position([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
+
+#compute running total of a list
+def run_total(j):
+    running_total = []
+    total = 0
+    for i in j:
+        total += i
+        running_total.append(total)
+    return running_total
+
+print([1, 2, 3, 4, 5, 6, 7, 8])
+print(run_total([1, 2, 3, 4, 5, 6, 7, 8]))
+
+
+#check if a string is a palindrome
+def check_palindrome():
+    word = input("Please enter a palindrome: ")
+    word.islower()
+    rev_word = word[::-1]
+    if word == rev_word:
+        print("It's a palindrome")
+    else:
+        print("It's not a palindrome")
+
+check_palindrome()
+
+# count a sum
+def for_sum():
+    numbers = input("Please enter a list of numbers: ")
+    list_num = numbers.split()
+    list_sum = 0
+    i = 0
+    #for j in list_num:
+       # list_sum += int(j)
+    #while i < len(list_num):
+       # list_sum += int(list_num[i])
+        #i += 1
+    print(list_sum)
+
+for_sum()"""
+
+"""def recursion_sum(x):
+    if len(x) == 1:
+        return x[0]
+    else:
+        return x[0] + recursion_sum(x[1:])
+
+print(recursion_sum([1, 2, 3, 4, 5]))
+print(recursion_sum([]))
+
+# print first 20 perfect squares
+perfect_square = [x**2 for x in range(21)]
+print(perfect_square)
+
+def on_all():
+    numbers = range(21)
+    for x in numbers:
+        print(x**2,)
+on_all()
+
+# concatenates 2 lists
+def list_concat(x, y):
+    return x + y
+
+print([1, 2, 3], [4, 5, 6])
+"""
+# combine 2 lists
+"""def combine_lists(x, y):
+    z = []
+    for i in range(len(x)):
+        z.append(x[i])
+        z.append(y[i])
+    return z
+print(combine_lists([1, 2, 3], ['a', 'b', 'c']))
+"""
+
+
+
+
+
+
+
