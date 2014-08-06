@@ -17,6 +17,20 @@ driver.find_element_by_link_text("FRIENDS").click()
 
 try:
     wait = WebDriverWait(driver, 5).until(
-        EC.presence_of_all_elements_located(By.XPATH, "//div[@class='uiHeaderActions']/a[2]")
+        EC.presence_of_all_elements_located((By.XPATH, "//div[@class='uiHeaderActions']/a[2]"))
     )
-    driver.find_element_by_xpath().click()
+finally:
+    driver.find_element_by_xpath("//div[@class='uiHeaderActions']/a[2]").click()
+
+sleep(3)
+
+number_friends = int(driver.find_element_by_xpath("//span[@class='_3d0']").text)
+print("You have " + str(number_friends) + " friends on FB")
+
+sleep(2)
+driver.execute_script("window.scrollTo(0, 3500)")
+sleep(3)
+elem = driver.find_elements_by_class_name("_698")
+
+
+driver.close()
